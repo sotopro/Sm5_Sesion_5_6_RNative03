@@ -1,0 +1,38 @@
+.product span {
+    font-size: 100px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.wrapper button {
+    font-size: 20px;
+    background: none;
+}
+
+.wrapper .product {
+}
+
+.wrapper .product span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+
+.wrapper .product .button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .product .button button{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
