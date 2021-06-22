@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Progress from './shared/components/progress/style';
+import FormSignUp from './shared/components/form';
+// import Progress from './shared/components/progress/style';
 // import Product from './shared/components/Product';
 // import styled from 'styled-components';
 
@@ -50,8 +51,15 @@ const App = () => {
   })
 
   return (
-    <div className="app">
-      <Progress scroll={`${scrollPosition}%`} />
+    <main>
+      <div className="container">
+        <FormSignUp />
+      </div>
+      <div className="container dark">
+        <FormSignUp dark />
+      </div>
+    </main>
+      /* <Progress scroll={`${scrollPosition}%`} />
       <header></header>
       <main>
         <h1>Lorem Ipsum</h1>
@@ -117,10 +125,10 @@ const App = () => {
         <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-      </main>
-      {/* <Title>Hello</Title>
-      <Product /> */}
-    </div>
+      </main> */
+      /* <Title>Hello</Title>
+      <Product /> */
+    
   );
 }
 
